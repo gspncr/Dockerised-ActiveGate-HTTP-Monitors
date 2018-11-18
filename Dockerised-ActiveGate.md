@@ -40,3 +40,13 @@ The ACS deployment is a breeze:
 You are billed for usage, Azure creates the build when it is required.
 
 ![](https://i.imgur.com/7fFZt6J.png)
+
+## Deploying in AWS ECS (as Fargate)
+First define the container
+![](https://i.imgur.com/TsbcZLd.png)
+
+In a Fargate cluster, create a new service to launch the ActiveGate container. The logs are streamed to AWS automatically, and also are persisted in cloudwatch.
+![](https://i.imgur.com/ypYvYPl.png)
+
+Verify the container is in a running state in the task definition
+![](https://i.imgur.com/ypYvYPl.png)
